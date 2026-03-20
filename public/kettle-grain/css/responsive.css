@@ -1,0 +1,303 @@
+/* ========================================
+   Kettle & Grain Bakery - Responsive Styles
+   ======================================== */
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+  :root {
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 5rem;
+  }
+  
+  .hero-content {
+    padding: var(--space-xl);
+  }
+  
+  .section {
+    padding: var(--space-xl) 0;
+  }
+  
+  .card-image {
+    height: 250px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  :root {
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+    --space-2xl: 6rem;
+  }
+  
+  /* Typography adjustments */
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.25rem;
+  }
+  
+  /* Hero */
+  .hero {
+    min-height: 80vh;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  /* Section padding */
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+  
+  /* Cards */
+  .card-image {
+    height: 280px;
+  }
+  
+  /* Image section */
+  .image-section {
+    min-height: 500px;
+  }
+  
+  /* Form */
+  .form {
+    max-width: 700px;
+  }
+  
+  /* Visit page layout */
+  .visit-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Container */
+  .container {
+    padding: 0 var(--space-lg);
+  }
+  
+  /* Hero */
+  .hero {
+    min-height: 85vh;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+  }
+  
+  /* Page header */
+  .page-header {
+    padding: calc(var(--space-xl) * 1.5) 0;
+  }
+  
+  /* Cards */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+  
+  /* Bread grid */
+  .bread-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+  
+  /* Partner cards */
+  .partners-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+  
+  /* Story layout */
+  .story-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-2xl);
+    align-items: start;
+  }
+  
+  .story-sidebar {
+    position: sticky;
+    top: 100px;
+  }
+  
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Container max-width */
+  .container {
+    max-width: 1200px;
+  }
+  
+  /* Hero */
+  .hero-title {
+    font-size: 4.5rem;
+  }
+  
+  /* Section spacing */
+  .section {
+    padding: calc(var(--space-2xl) * 1.2) 0;
+  }
+  
+  /* Bread grid - 3 columns on large screens */
+  .bread-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra extra large devices (1440px and up) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .header,
+  .mobile-nav,
+  .menu-toggle,
+  .hero-overlay,
+  .btn,
+  .footer {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+  
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+  
+  img {
+    max-width: 100% !important;
+  }
+  
+  .section {
+    padding: 1rem 0;
+  }
+  
+  a {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-cream: #ffffff;
+    --color-charcoal: #000000;
+    --color-wheat: #996600;
+    --color-sage: #336600;
+  }
+  
+  .btn-primary {
+    border: 2px solid var(--color-charcoal);
+  }
+  
+  .card,
+  .bread-card {
+    border: 2px solid var(--color-charcoal);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  /* Keeping the warm bakery aesthetic even in dark mode */
+  /* Uncomment to enable dark mode
+  :root {
+    --color-cream: #2a2520;
+    --color-charcoal: #f5f0e8;
+  }
+  
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-charcoal);
+  }
+  
+  .card,
+  .bread-card {
+    background-color: #3a3530;
+  }
+  */
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .card:hover,
+  .bread-card:hover {
+    transform: none;
+  }
+  
+  .btn {
+    padding: 1rem 2.5rem;
+  }
+  
+  .nav-link::after {
+    display: none;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .mobile-nav {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}
