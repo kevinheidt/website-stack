@@ -1,0 +1,47 @@
+<script>
+  import { animate } from "../utils/animate"; // Assuming animate utility function
+  export let target = 0;
+  export let duration = 1500;
+  export let delay = 0;
+
+  let displayedValue = 0;
+  let countElement;
+
+  const startAnimation = (entry, observer) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        const controller = animate({
+          from: 0,
+          to: target,
+          duration,
+          onUpdate: (value) => {
+            displayedValue = Math.floor(value);
+          },
+        });
+      }, delay);
+      observer.unobserve(entry.target);
+    }
+  };
+
+  let observer;
+
+  if (typeof IntersectionObserver !== 'undefined') {
+      observer = new IntersectionObserver(entries => {
+        entries.forEach(startAnimation);
+      }, { threshold: 0.8 }); // Trigger when 80% visible
+  }
+
+  const handleMount = () => {
+    if (countElement && observer) {
+      observer.observe(countElement);
+    }
+  }
+</script>
+
+<span bind:this={countElement}>{displayedValue}</span>
+
+<style>
+  span {
+    font-variant-numeric: tabular-nums;
+  }
+</style>

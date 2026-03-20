@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order / Visit | Kettle & Grain Bakery</title>
+  <meta name="description" content="Pre-order your bread for Saturday pickup. Visit us at 1142 Ellis Street, Kelowna BC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Kettle <span>&</span> Grain</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="our-bread.html" class="nav-link">Our Bread</a></li>
+          <li><a href="our-story.html" class="nav-link">Our Story</a></li>
+          <li><a href="order-visit.html" class="nav-link active">Order</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="our-bread.html" class="mobile-nav-link">Our Bread</a></li>
+      <li><a href="our-story.html" class="mobile-nav-link">Our Story</a></li>
+      <li><a href="order-visit.html" class="mobile-nav-link">Order</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="section" style="padding-top: 12rem; padding-bottom: 4rem;">
+    <div class="reveal">
+      <p class="label" style="margin-bottom: 1rem;">Visit</p>
+      <h1 class="display-lg" style="max-width: 700px;">Come find us</h1>
+    </div>
+  </section>
+
+  <!-- Pre-order Section -->
+  <section class="section" style="background: var(--cream-dark);">
+    <div class="reveal" style="max-width: 600px;">
+      <p class="label" style="margin-bottom: 1rem;">Pre-order</p>
+      <h2 class="display-md" style="margin-bottom: 1.5rem;">Guarantee your loaves</h2>
+      <p style="opacity: 0.8; margin-bottom: 3rem;">We bake in limited quantities and sell out most days. Pre-ordering for Saturday pickup guarantees your bread. Fill out the form below and we'll confirm by Thursday evening.</p>
+      
+      <form id="orderForm" style="display: grid; gap: 1.5rem;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div>
+            <label style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Name *</label>
+            <input type="text" required style="width: 100%; padding: 1rem; border: 1px solid rgba(28,28,28,0.2); background: white; font-family: var(--font-body);">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Phone *</label>
+            <input type="tel" required style="width: 100%; padding: 1rem; border: 1px solid rgba(28,28,28,0.2); background: white; font-family: var(--font-body);">
+          </div>
+        </div>
+        
+        <div>
+          <label style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Email *</label>
+          <input type="email" required style="width: 100%; padding: 1rem; border: 1px solid rgba(28,28,28,0.2); background: white; font-family: var(--font-body);">
+        </div>
+        
+        <div>
+          <label style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Pickup Date (Saturdays only) *</label>
+          <select required style="width: 100%; padding: 1rem; border: 1px solid rgba(28,28,28,0.2); background: white; font-family: var(--font-body);">
+            <option value="">Select a Saturday</option>
+            <option>This Saturday</option>
+            <option>Next Saturday</option>
+            <option>Following Saturday</option>
+          </select>
+        </div>
+        
+        <div style="margin-top: 1rem;">
+          <p class="label" style="margin-bottom: 1rem;">Your Order</p>
+          
+          <div style="display: grid; gap: 1rem;">
+            <div style="display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; padding: 1rem; background: white;">
+              <div>
+                <p style="font-weight: 500;">Country Sourdough — \$9</p>
+              </div>
+              <input type="number" min="0" value="0" style="width: 60px; padding: 0.5rem; border: 1px solid rgba(28,28,28,0.2); text-align: center;">
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; padding: 1rem; background: white;">
+              <div>
+                <p style="font-weight: 500;">Okanagan Harvest — \$11</p>
+                <p style="font-size: 0.8rem; opacity: 0.6;">Saturdays only</p>
+              </div>
+              <input type="number" min="0" value="0" style="width: 60px; padding: 0.5rem; border: 1px solid rgba(28,28,28,0.2); text-align: center;">
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; padding: 1rem; background: white;">
+              <div>
+                <p style="font-weight: 500;">Seeded Rye — \$10</p>
+              </div>
+              <input type="number" min="0" value="0" style="width: 60px; padding: 0.5rem; border: 1px solid rgba(28,28,28,0.2); text-align: center;">
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; padding: 1rem; background: white;">
+              <div>
+                <p style="font-weight: 500;">Whole Wheat Miche — \$10</p>
+              </div>
+              <input type="number" min="0" value="0" style="width: 60px; padding: 0.5rem; border: 1px solid rgba(28,28,28,0.2); text-align: center;">
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; padding: 1rem; background: white;">
+              <div>
+                <p style="font-weight: 500;">Croissants — \$4.50 each</p>
+              </div>
+              <input type="number" min="0" value="0" style="width: 60px; padding: 0.5rem; border: 1px solid rgba(28,28,28,0.2); text-align: center;">
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <label style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Notes / Special Requests</label>
+          <textarea rows="3" style="width: 100%; padding: 1rem; border: 1px solid rgba(28,28,28,0.2); background: white; font-family: var(--font-body); resize: vertical;"></textarea>
+        </div>
+        
+        <p style="font-size: 0.9rem; opacity: 0.7;">Orders confirmed by email. Payment at pickup. We hold pre-orders until 9am — after that they go to the walk-in queue.</p>
+        
+        <button type="submit" class="hero-cta" style="border: none; cursor: pointer; width: 100%; justify-content: center;">Reserve My Order →</button>
+      </form>
+      
+      <div id="formSuccess" style="display: none; text-align: center; padding: 3rem;">
+        <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem;">Thank you!</h3>
+        <p style="opacity: 0.8;">Your pre-order has been received. We'll confirm by Thursday evening with pickup details.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Info + Map -->
+  <section class="section">
+    <div style="display: grid; gap: 3rem; align-items: start;">
+      <div class="reveal">
+        <p class="label" style="margin-bottom: 1rem;">Location</p>
+        <h2 class="display-md" style="margin-bottom: 2rem;">1142 Ellis Street<br>Kelowna BC V1Y 1Z4</h2>
+        
+        <div style="margin-bottom: 2rem;">
+          <h4 style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem; opacity: 0.6;">Hours</h4>
+          <p style="margin-bottom: 0.5rem;">Tuesday – Friday: 7am – 2pm or sellout</p>
+          <p style="margin-bottom: 0.5rem;">Saturday: 7am – 1pm</p>
+          <p>Sunday – Monday: Closed</p>
+        </div>
+        
+        <div style="margin-bottom: 2rem;">
+          <h4 style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem; opacity: 0.6;">Parking</h4>
+          <p>Free parking off the alley behind the building. Street parking on Ellis is metered until 6pm.</p>
+        </div>
+        
+        <div>
+          <h4 style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem; opacity: 0.6;">Note</h4>
+          <p style="opacity: 0.8;">We don't have a café — no seating, no coffee. Just bread, a counter, and the smell of something good baking.</p>
+        </div>
+        
+        <div style="margin-top: 2rem;">
+          <p><a href="mailto:hello@kettleandgrain.ca" style="color: var(--wheat);">hello@kettleandgrain.ca</a></p>
+          <p><a href="https://instagram.com/kettleandgrain" target="_blank" style="color: var(--wheat);">@kettleandgrain</a></p>
+        </div>
+      </div>
+      
+      <div class="reveal">
+        <div style="height: 400px; background: var(--cream-dark);">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.0!2d-119.496!3d49.888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDUzJzE2LjgiTiAxMTnCsDI5JzQ1LjYiVw!5e0!3m2!1sen!2sca!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">Kettle <span>&</span> Grain</div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Tuesday – Friday: 7am – 2pm<br>or sellout</p>
+        <p>Saturday: 7am – 1pm</p>
+        <p>Sunday – Monday: Closed</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>1142 Ellis Street<br>Kelowna BC V1Y 1Z4</p>
+        <p><a href="mailto:hello@kettleandgrain.ca">hello@kettleandgrain.ca</a></p>
+        <p><a href="https://instagram.com/kettleandgrain" target="_blank">@kettleandgrain</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Kettle & Grain Bakery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      mobileNav.classList.toggle('active');
+    });
+    
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 100);
+    });
+    
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => entry.isIntersecting && entry.target.classList.add('active'));
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+    
+    // Form submission
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
