@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order / Visit | Kettle & Grain Bakery</title>
+  <meta name="description" content="Pre-order your bread for Saturday pickup. Visit us at 1142 Ellis Street, Kelowna BC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">Kettle <span>&</span> Grain</a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="our-bread.html" class="nav-link">Our Bread</a></li>
+            <li><a href="our-story.html" class="nav-link">Our Story</a></li>
+            <li><a href="order-visit.html" class="nav-link active">Order / Visit</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="our-bread.html" class="mobile-nav-link">Our Bread</a></li>
+        <li><a href="our-story.html" class="mobile-nav-link">Our Story</a></li>
+        <li><a href="order-visit.html" class="mobile-nav-link">Order / Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Come find us</h1>
+    </div>
+  </section>
+
+  <!-- Pre-order Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Pre-order for pickup</h2>
+        <p class="section-intro">We bake in limited quantities and sell out most days. Pre-ordering for Saturday pickup guarantees your loaves. Fill out the form below and we'll confirm by Thursday evening.</p>
+      </div>
+      
+      <form class="form" data-validate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" class="form-label">Name *</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone *</label>
+            <input type="tel" id="phone" name="phone" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="pickup-date" class="form-label">Pickup date (Saturdays only) *</label>
+            <select id="pickup-date" name="pickup-date" class="form-select" required>
+              <option value="">Select a Saturday</option>
+              <option value="this-saturday">This Saturday</option>
+              <option value="next-saturday">Next Saturday</option>
+              <option value="following-saturday">Following Saturday</option>
+            </select>
+          </div>
+        </div>
+        
+        <h3 style="margin: 2rem 0 1rem; font-family: var(--font-heading);">Your order</h3>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="country-sourdough" class="form-label">Country Sourdough — \$9</label>
+            <input type="number" id="country-sourdough" name="country-sourdough" class="form-input quantity-input" min="0" value="0">
+          </div>
+          <div class="form-group">
+            <label for="okanagan-harvest" class="form-label">Okanagan Harvest — \$11 <small>(Saturdays only)</small></label>
+            <input type="number" id="okanagan-harvest" name="okanagan-harvest" class="form-input quantity-input" min="0" value="0">
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="seeded-rye" class="form-label">Seeded Rye — \$10</label>
+            <input type="number" id="seeded-rye" name="seeded-rye" class="form-input quantity-input" min="0" value="0">
+          </div>
+          <div class="form-group">
+            <label for="whole-wheat-miche" class="form-label">Whole Wheat Miche — \$10</label>
+            <input type="number" id="whole-wheat-miche" name="whole-wheat-miche" class="form-input quantity-input" min="0" value="0">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="croissants" class="form-label">Croissants — \$4.50 each</label>
+          <input type="number" id="croissants" name="croissants" class="form-input quantity-input" min="0" value="0">
+        </div>
+        
+        <div class="form-group">
+          <label for="notes" class="form-label">Notes / special requests</label>
+          <textarea id="notes" name="notes" class="form-textarea" placeholder="Any special instructions..."></textarea>
+        </div>
+        
+        <p class="form-note">Orders are confirmed by email. Payment at pickup. We hold pre-orders until 9am — after that they go to the walk-in queue.</p>
+        
+        <button type="submit" class="btn btn-primary" style="margin-top: 1.5rem;">Reserve my order</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Visit Info Section -->
+  <section class="section grain-bg">
+    <div class="container">
+      <div class="visit-layout">
+        <div class="visit-info">
+          <h3>Kettle & Grain Bakery</h3>
+          <p class="visit-info-address">1142 Ellis Street<br>Kelowna BC V1Y 1Z4</p>
+          
+          <div class="visit-info-hours">
+            <h4>Hours</h4>
+            <p>Tuesday – Friday: 7am – 2pm or sellout</p>
+            <p>Saturday: 7am – 1pm</p>
+            <p>Sunday – Monday: Closed</p>
+          </div>
+          
+          <p class="visit-info-note">Free parking off the alley behind the building. Street parking on Ellis is metered until 6pm.</p>
+          
+          <p class="visit-info-note">We don't have a café — no seating, no coffee. Just bread, a counter, and the smell of something good baking.</p>
+          
+          <div class="visit-info-contact">
+            <a href="https://instagram.com/kettleandgrain" target="_blank">Instagram: @kettleandgrain</a>
+            <a href="mailto:hello@kettleandgrain.ca">hello@kettleandgrain.ca</a>
+          </div>
+        </div>
+        
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.1234567890123!2d-119.4962333!3d49.8879333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537d8cb6a1c1e1e1%3A0x1e1e1e1e1e1e1e1e!2s1142%20Ellis%20St%2C%20Kelowna%2C%20BC%20V1Y%201Z4!5e0!3m2!1sen!2sca!4v1234567890123" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Kettle & Grain Bakery location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Kettle & Grain Bakery</div>
+          <p class="footer-address">1142 Ellis Street, Kelowna BC V1Y 1Z4</p>
+        </div>
+        <div class="footer-hours">
+          <h4>Hours</h4>
+          <p>Tuesday – Friday: 7am – 2pm or sellout</p>
+          <p>Saturday: 7am – 1pm</p>
+          <p>Sunday – Monday: Closed</p>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><a href="https://instagram.com/kettleandgrain" target="_blank">Instagram: @kettleandgrain</a></p>
+          <p><a href="mailto:hello@kettleandgrain.ca">hello@kettleandgrain.ca</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Kettle & Grain Bakery. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
