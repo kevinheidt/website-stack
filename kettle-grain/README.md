@@ -1,35 +1,62 @@
-# Kettle & Grain Bakery Website
+# Kettle & Grain Bakery — V2 Bold Redesign
 
-A complete, custom-designed website for Kettle & Grain Bakery — a small-batch artisan sourdough bakery in Kelowna, BC.
+A complete redesign of the Kettle & Grain Bakery website with bold, editorial design.
 
-## Overview
+## What's New in V2
 
-- **Built from scratch** with HTML, CSS, and vanilla JavaScript
-- **No page builders** or frameworks used
-- **Mobile-first responsive design**
-- **4 complete pages** with all content
+### Design Philosophy
+- **Asymmetric layouts** — Breaking the grid with unexpected compositions
+- **Typography-first** — Giant Playfair Display headlines that dominate
+- **Editorial feel** — Magazine-style layouts, not template cards
+- **Visual tension** — Overlapping elements, dramatic scale contrasts
 
-## Pages
+### Key Features
 
-1. **Home** (`index.html`) — Hero, featured breads, story teaser, farm partners, hours
-2. **Our Bread** (`our-bread.html`) — Product grid with sourdoughs, pastries, seasonal specials
-3. **Our Story** (`our-story.html`) — Marcus's background, grain sourcing, open kitchen
-4. **Order / Visit** (`order-visit.html`) — Pre-order form, hours, location, map
+**Hero Section**
+- Full viewport height
+- Giant stacked "SLOW / BREAD." typography (up to 12rem)
+- Cropped bread image as side panel
+- Gradient overlay blending image into cream background
 
-## Design
+**Stats Bar**
+- Dark (#1c1c1c) horizontal band
+- Large wheat gold numbers
+- All-caps letter-spaced labels
+- Dot separators between stats
 
-### Color Palette
-- Warm cream: `#f5f0e8` (background)
-- Deep charcoal: `#1c1c1c` (text)
-- Wheat gold: `#c8922a` (accent, buttons)
-- Dusty sage: `#7a8c6e` (secondary accent)
+**Editorial Layouts**
+- Featured item large left, stacked items right
+- Alternating zig-zag layouts for pastries
+- Full-bleed imagery with text overlays
 
-### Typography
-- Headings: Playfair Display (Google Fonts)
-- Body: Inter (Google Fonts)
+**CSS Techniques Used**
+- CSS Grid with named areas
+- CSS custom properties for all brand tokens
+- Grain texture overlay using SVG noise filter
+- clip-path for angled section edges
+- Intersection Observer for scroll reveals
+- Sticky nav with scroll-triggered background change
 
-## File Structure
+### Pages
+1. **Home** — Hero, stats bar, featured breads (editorial layout), story teaser, farm partners (full-bleed), open kitchen (split screen)
+2. **Our Bread** — Editorial product layouts, alternating pastry grid, dark seasonal section
+3. **Our Story** — Long-form narrative, split-screen grain section, partner details
+4. **Order / Visit** — Clean form layout, map embed
 
+### Typography Scale
+- Display XL: clamp(4rem, 12vw, 12rem)
+- Display LG: clamp(3rem, 8vw, 7rem)
+- Display MD: clamp(2rem, 5vw, 4rem)
+- Labels: 0.75rem, uppercase, letter-spacing: 0.2em
+
+### Colors
+- Cream: #f5f0e8
+- Cream Dark: #e8e0d4
+- Charcoal: #1c1c1c
+- Wheat: #c8922a
+- Sage: #7a8c6e
+
+### File Structure
 ```
 kettle-grain/
 ├── index.html
@@ -37,40 +64,17 @@ kettle-grain/
 ├── our-story.html
 ├── order-visit.html
 ├── css/
-│   ├── style.css        # Main styles, variables, base
-│   ├── components.css   # Cards, grids, forms
-│   └── responsive.css   # Media queries
-├── js/
-│   └── main.js          # Mobile menu, smooth scroll, form validation
+│   └── style.css (single consolidated stylesheet)
 └── README.md
 ```
 
-## Features
-
-- Sticky header with mobile hamburger menu
-- Smooth scroll navigation
-- CSS grain texture backgrounds
-- Hover effects on cards and buttons
-- Form validation (client-side)
-- Google Maps embed
-- Fully responsive across all devices
+JavaScript is embedded in each page for simplicity — mobile menu, scroll effects, and form handling.
 
 ## Images
-
-All images sourced from Unsplash using direct URLs:
-- Hero: Artisan sourdough bread
-- Farm partners: Wheat fields and farmers
-- Open kitchen: Bakery kitchen scenes
-- Heritage grain: Wheat grain close-ups
-
-## Browser Support
-
-- Chrome, Firefox, Safari, Edge (latest versions)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-- Responsive design works on all screen sizes
-
-## Notes
-
-- Form is static HTML (no backend)
-- All content follows the exact copy from the design brief
-- Built as a capability demonstration project
+All from Unsplash:
+- Hero: Artisan sourdough
+- Bread close-ups
+- Wheat fields
+- Bakery kitchen
+- Croissants
+- Heritage grain

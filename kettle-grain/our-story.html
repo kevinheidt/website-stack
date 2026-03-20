@@ -4,133 +4,170 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Story | Kettle & Grain Bakery</title>
-  <meta name="description" content="How Marcus Holt built Kettle & Grain Bakery. From backyard wood-fired oven to Kelowna's destination for artisan sourdough.">
+  <meta name="description" content="How Marcus Holt built Kettle & Grain Bakery from a backyard oven to Kelowna's destination for artisan sourdough.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="index.html" class="logo">Kettle <span>&</span> Grain</a>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="our-bread.html" class="nav-link">Our Bread</a></li>
-            <li><a href="our-story.html" class="nav-link active">Our Story</a></li>
-            <li><a href="order-visit.html" class="nav-link">Order / Visit</a></li>
-          </ul>
-        </nav>
-        <button class="menu-toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Kettle <span>&</span> Grain</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="our-bread.html" class="nav-link">Our Bread</a></li>
+          <li><a href="our-story.html" class="nav-link active">Our Story</a></li>
+          <li><a href="order-visit.html" class="nav-link">Order</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <nav class="mobile-nav">
-      <ul class="mobile-nav-list">
-        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-        <li><a href="our-bread.html" class="mobile-nav-link">Our Bread</a></li>
-        <li><a href="our-story.html" class="mobile-nav-link">Our Story</a></li>
-        <li><a href="order-visit.html" class="mobile-nav-link">Order / Visit</a></li>
-      </ul>
-    </nav>
   </header>
 
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="our-bread.html" class="mobile-nav-link">Our Bread</a></li>
+      <li><a href="our-story.html" class="mobile-nav-link">Our Story</a></li>
+      <li><a href="order-visit.html" class="mobile-nav-link">Order</a></li>
+    </ul>
+  </nav>
+
   <!-- Page Header -->
-  <section class="page-header">
-    <div class="container">
-      <h1>How we got here</h1>
+  <section class="section" style="padding-top: 12rem; padding-bottom: 4rem;">
+    <div class="reveal">
+      <p class="label" style="margin-bottom: 1rem;">Our Story</p>
+      <h1 class="display-lg" style="max-width: 800px;">How we got here</h1>
     </div>
   </section>
 
-  <!-- Story Content -->
+  <!-- Marcus Section -->
+  <section class="section" style="background: var(--cream-dark);">
+    <div class="reveal" style="max-width: 700px;">
+      <p class="label" style="margin-bottom: 2rem;">Marcus Holt</p>
+      
+      <p style="font-size: 1.15rem; line-height: 1.9; margin-bottom: 2rem;">Marcus Holt grew up in a family that cooked seriously but baked casually. Bread was sliced from a plastic bag. That was fine until it wasn't.</p>
+      
+      <p style="font-size: 1.15rem; line-height: 1.9; margin-bottom: 2rem;">In 2011, on a three-month trip through France, Italy, and Denmark, Marcus started paying attention to bread the way some people pay attention to wine. The crust. The crumb. The sour. He took notes. He asked bakers questions in broken French and worse Italian. He came home with an obsession and no good outlet for it.</p>
+      
+      <p style="font-size: 1.15rem; line-height: 1.9; margin-bottom: 2rem;">For three years he baked in his kitchen on weekends, reading Tartine Bread until the pages fell apart, adjusting hydration and timing by trial and error. He built a small wood-fired oven in the backyard. His neighbours started leaving notes asking to buy loaves.</p>
+      
+      <p style="font-size: 1.15rem; line-height: 1.9;">In 2019, Marcus signed a lease on a small space on Ellis Street. Kettle & Grain opened with four loaves and a lineup of eight people who'd been following him on Instagram. They sold out in forty minutes.</p>
+    </div>
+  </section>
+
+  <!-- The Grain Section — Split -->
+  <section class="split-section">
+    <div class="split-content reveal">
+      <p class="label" style="margin-bottom: 1.5rem; opacity: 0.6;">The Grain</p>
+      <h2 class="display-md" style="margin-bottom: 2rem;">Most bakeries buy flour from a mill. We buy grain from farmers.</h2>
+      <p style="opacity: 0.8; margin-bottom: 1.5rem;">It started with a conversation. Marcus met James Sunrise at a farmers market in 2018 and asked what heritage grains he was growing. James grew red fife, spelt, and a hard red wheat his grandfather had sourced from a Ukrainian seed bank in the 1960s. Nobody in the region was buying it for bread. Marcus started buying it the next week.</p>
+      <p style="opacity: 0.8;">Cold Creek Grain came later. Dale Whitford reached out after hearing about Kettle & Grain through a farming forum. He'd been growing einkorn and emmer — ancient wheats with more protein, more flavour, and a lot less commercial demand.</p>
+    </div>
+    <div class="split-image">
+      <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=1000&q=80" alt="Heritage grain">
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Generations of Sunrise Farming</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">1960s</span>
+        <span class="stat-label">Ukrainian Seed Bank</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">0</span>
+        <span class="stat-label">Pesticides</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Kitchen -->
   <section class="section">
-    <div class="container container-narrow">
-      <div class="story-section">
-        <h2>Marcus</h2>
-        <p>Marcus Holt grew up in a family that cooked seriously but baked casually. Bread was sliced from a plastic bag. That was fine until it wasn't.</p>
-        <p>In 2011, on a three-month trip through France, Italy, and Denmark, Marcus started paying attention to bread the way some people pay attention to wine. The crust. The crumb. The sour. He took notes. He asked bakers questions in broken French and worse Italian. He came home with an obsession and no good outlet for it.</p>
-        <p>For three years he baked in his kitchen on weekends, reading Tartine Bread and Chad Robertson until the pages fell apart, adjusting hydration and timing by trial and error. He built a small wood-fired oven in the backyard. His neighbours started leaving notes asking to buy loaves.</p>
-        <p>In 2019, Marcus signed a lease on a small space on Ellis Street. Kettle & Grain opened with four loaves and a lineup of eight people who'd been following him on Instagram. They sold out in forty minutes.</p>
-      </div>
+    <div class="reveal" style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <p class="label" style="margin-bottom: 1.5rem;">The Kitchen</p>
+      <blockquote class="italic" style="font-family: var(--font-heading); font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.2; margin-bottom: 2rem;">"We don't hide what we do."</blockquote>
+      <p style="opacity: 0.8; font-size: 1.1rem; line-height: 1.8;">The glass wall facing Ellis Street wasn't in the original plan — it came from a conversation with the contractor who pointed out we had a beautiful workspace and were about to brick it in. Good call.</p>
+      <p style="opacity: 0.8; font-size: 1.1rem; line-height: 1.8; margin-top: 1.5rem;">Come by any morning and you'll see the full operation: dough being mixed and shaped, lamination happening on the big marble table, loaves coming out of the Oskar oven Marcus imported from a bakery equipment maker in Lyon. There's no performance to it. It's just the work, visible.</p>
     </div>
   </section>
 
-  <!-- The Grain Section -->
-  <section class="section grain-bg">
-    <div class="container container-narrow">
-      <div class="story-section">
-        <h2>The grain</h2>
-        <p>Most bakeries buy flour from a mill. We buy grain from farmers and mill some of it ourselves.</p>
-        <p>It started with a conversation. Marcus met James Sunrise at a farmers market in 2018 and asked what heritage grains he was growing. James grew red fife, spelt, and a hard red wheat his grandfather had sourced from a Ukrainian seed bank in the 1960s. Nobody in the region was buying it for bread. Marcus started buying it the next week.</p>
-        <p>Cold Creek Grain came later. Dale Whitford reached out after hearing about Kettle & Grain through a farming forum. He'd been growing einkorn and emmer — ancient wheats with more protein, more flavour, and a lot less commercial demand. They've been working together since 2021.</p>
-        <p>Sourcing this way costs more and requires more work. The flour behaves differently batch to batch depending on the harvest. Marcus considers that a feature, not a bug.</p>
-      </div>
-    </div>
+  <!-- Image -->
+  <section style="height: 60vh; position: relative;">
+    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1600&q=80" alt="Open kitchen" style="width: 100%; height: 100%; object-fit: cover;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, var(--charcoal) 0%, transparent 50%);"></div>
   </section>
 
-  <!-- Open Kitchen Section -->
-  <section class="section">
-    <div class="container">
-      <div class="feature-section reverse">
-        <div class="feature-image">
-          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=80" alt="Open bakery kitchen">
-        </div>
-        <div class="feature-content">
-          <h2>The open kitchen</h2>
-          <p>We don't hide what we do.</p>
-          <p>The glass wall facing Ellis Street wasn't in the original plan — it came from a conversation with the contractor who pointed out we had a beautiful workspace and were about to brick it in. Good call.</p>
-          <p>Come by any morning and you'll see the full operation: dough being mixed and shaped, lamination happening on the big marble table, loaves coming out of the Oskar oven Marcus imported from a bakery equipment maker in Lyon. There's no performance to it. It's just the work, visible.</p>
-        </div>
+  <!-- Partners Detail -->
+  <section class="section section-dark">
+    <div style="display: grid; gap: 4rem; max-width: 900px;">
+      <div class="reveal">
+        <p class="farm-location" style="margin-bottom: 1rem;">Oyama, BC</p>
+        <h3 style="font-size: 2rem; margin-bottom: 1rem;">Sunrise Heritage Farms</h3>
+        <p style="opacity: 0.8; line-height: 1.8;">The Sunrise family has been farming the Okanagan bench for three generations. They grow red fife, spelt, and heritage hard red wheat using no-till methods. We've been their exclusive bakery partner since 2020.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Heritage Grain Image Section -->
-  <section class="image-section">
-    <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=1200&q=80" alt="Heritage grain wheat" class="image-section-bg">
-    <div class="image-section-overlay"></div>
-    <div class="container">
-      <div class="image-section-content">
-        <h2>Real grain. Real flavour.</h2>
-        <p>Heritage wheat varieties carry flavours that commodity grains lost decades ago. That's why we source directly from farmers who care about what they grow.</p>
+      
+      <div class="reveal">
+        <p class="farm-location" style="margin-bottom: 1rem;">Vernon, BC</p>
+        <h3 style="font-size: 2rem; margin-bottom: 1rem;">Cold Creek Grain</h3>
+        <p style="opacity: 0.8; line-height: 1.8;">Dale Whitford started Cold Creek after leaving commodity grain farming. He wanted to grow varieties that actually had flavour. We source his einkorn and emmer exclusively. Meet Dale when you visit — he's usually around on Saturdays.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-brand">Kettle & Grain Bakery</div>
-          <p class="footer-address">1142 Ellis Street, Kelowna BC V1Y 1Z4</p>
-        </div>
-        <div class="footer-hours">
-          <h4>Hours</h4>
-          <p>Tuesday – Friday: 7am – 2pm or sellout</p>
-          <p>Saturday: 7am – 1pm</p>
-          <p>Sunday – Monday: Closed</p>
-        </div>
-        <div class="footer-contact">
-          <h4>Contact</h4>
-          <p><a href="https://instagram.com/kettleandgrain" target="_blank">Instagram: @kettleandgrain</a></p>
-          <p><a href="mailto:hello@kettleandgrain.ca">hello@kettleandgrain.ca</a></p>
-        </div>
+    <div class="footer-logo">Kettle <span>&</span> Grain</div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Tuesday – Friday: 7am – 2pm<br>or sellout</p>
+        <p>Saturday: 7am – 1pm</p>
+        <p>Sunday – Monday: Closed</p>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Kettle & Grain Bakery. All rights reserved.</p>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>1142 Ellis Street<br>Kelowna BC V1Y 1Z4</p>
+        <p><a href="mailto:hello@kettleandgrain.ca">hello@kettleandgrain.ca</a></p>
+        <p><a href="https://instagram.com/kettleandgrain" target="_blank">@kettleandgrain</a></p>
       </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Kettle & Grain Bakery. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      mobileNav.classList.toggle('active');
+    });
+    
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 100);
+    });
+    
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => entry.isIntersecting && entry.target.classList.add('active'));
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>

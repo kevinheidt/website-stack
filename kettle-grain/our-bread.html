@@ -4,181 +4,203 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Bread | Kettle & Grain Bakery</title>
-  <meta name="description" content="Artisan sourdoughs, pastries, and seasonal specials. Made fresh in small batches with heritage wheat from Okanagan farms.">
+  <meta name="description" content="Artisan sourdoughs and pastries made with heritage wheat from Okanagan farms.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="index.html" class="logo">Kettle <span>&</span> Grain</a>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="our-bread.html" class="nav-link active">Our Bread</a></li>
-            <li><a href="our-story.html" class="nav-link">Our Story</a></li>
-            <li><a href="order-visit.html" class="nav-link">Order / Visit</a></li>
-          </ul>
-        </nav>
-        <button class="menu-toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Kettle <span>&</span> Grain</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="our-bread.html" class="nav-link active">Our Bread</a></li>
+          <li><a href="our-story.html" class="nav-link">Our Story</a></li>
+          <li><a href="order-visit.html" class="nav-link">Order</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <nav class="mobile-nav">
-      <ul class="mobile-nav-list">
-        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-        <li><a href="our-bread.html" class="mobile-nav-link">Our Bread</a></li>
-        <li><a href="our-story.html" class="mobile-nav-link">Our Story</a></li>
-        <li><a href="order-visit.html" class="mobile-nav-link">Order / Visit</a></li>
-      </ul>
-    </nav>
   </header>
 
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="our-bread.html" class="mobile-nav-link">Our Bread</a></li>
+      <li><a href="our-story.html" class="mobile-nav-link">Our Story</a></li>
+      <li><a href="order-visit.html" class="mobile-nav-link">Order</a></li>
+    </ul>
+  </nav>
+
   <!-- Page Header -->
-  <section class="page-header">
-    <div class="container">
-      <h1>The bread</h1>
-      <p>Everything is made in small batches, baked fresh three to five times a week. We don't freeze. We don't reheat. When it's gone, it's gone. Here's what we make.</p>
+  <section class="section" style="padding-top: 12rem; padding-bottom: 4rem;">
+    <div class="reveal">
+      <p class="label" style="margin-bottom: 1rem;">The Bread</p>
+      <h1 class="display-lg" style="max-width: 700px;">Everything made in small batches, baked fresh.</h1>
+      <p style="margin-top: 2rem; max-width: 500px; opacity: 0.8;">We don't freeze. We don't reheat. When it's gone, it's gone. Here's what we make.</p>
     </div>
   </section>
 
-  <!-- Sourdoughs Section -->
+  <!-- Sourdoughs -->
+  <section class="section" style="background: var(--cream-dark);">
+    <div class="reveal">
+      <p class="label" style="margin-bottom: 1rem;">Sourdoughs</p>
+    </div>
+    
+    <div class="editorial-grid" style="margin-top: 3rem;">
+      <div class="editorial-feature reveal">
+        <div class="editorial-feature-image" style="height: 50vh;">
+          <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=800&q=80" alt="Country Sourdough">
+        </div>
+        <div class="editorial-feature-content">
+          <h3>Country Sourdough</h3>
+          <p class="price">\$9</p>
+          <p>Our everyday loaf. Heritage hard red wheat, 18-hour cold ferment, naturally leavened. Crackling crust, open crumb. The one you'll come back for every week.</p>
+        </div>
+      </div>
+      
+      <div class="editorial-stack">
+        <div class="editorial-item reveal">
+          <div class="editorial-item-image">
+            <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&q=80" alt="Okanagan Harvest">
+          </div>
+          <div class="editorial-item-content">
+            <h4>Okanagan Harvest</h4>
+            <p class="price">\$11</p>
+            <p style="font-size: 0.9rem; opacity: 0.8;">Seasonal blend of red fife and einkorn. Earthy, nutty. Saturdays only.</p>
+          </div>
+        </div>
+        
+        <div class="editorial-item reveal">
+          <div class="editorial-item-image">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80" alt="Seeded Rye">
+          </div>
+          <div class="editorial-item-content">
+            <h4>Seeded Rye</h4>
+            <p class="price">\$10</p>
+            <p style="font-size: 0.9rem; opacity: 0.8;">40% dark rye, 60% heritage wheat. Caraway, sunflower, flax.</p>
+          </div>
+        </div>
+        
+        <div class="editorial-item reveal">
+          <div class="editorial-item-image">
+            <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400&q=80" alt="Whole Wheat Miche">
+          </div>
+          <div class="editorial-item-content">
+            <h4>Whole Wheat Miche</h4>
+            <p class="price">\$10</p>
+            <p style="font-size: 0.9rem; opacity: 0.8;">80% whole wheat, 20% white. The bread your grandparents would recognise.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pastries -->
   <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Sourdoughs</h2>
+    <div class="reveal">
+      <p class="label" style="margin-bottom: 1rem;">Pastries</p>
+      <h2 class="display-md">Laminated</h2>
+    </div>
+    
+    <div style="display: grid; gap: 3rem; margin-top: 3rem;">
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80" alt="Butter Croissant" style="height: 300px; width: 100%; object-fit: cover;">
+        <div>
+          <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">Butter Croissant</h3>
+          <p class="price" style="font-size: 1.5rem; margin-bottom: 1rem;">\$4.50</p>
+          <p style="opacity: 0.8;">72 hours of lamination. Cultured BC butter. Honeycombed interior. The real thing.</p>
+        </div>
       </div>
-      <div class="bread-grid">
-        <div class="bread-card">
-          <div class="bread-card-header">
-            <h3 class="bread-card-title">Country Sourdough</h3>
-            <span class="bread-card-price">\$9</span>
-          </div>
-          <p class="bread-card-desc">Our everyday loaf. Heritage hard red wheat, 18-hour cold ferment, naturally leavened. Crackling crust, open crumb. The one you'll come back for every week.</p>
+      
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; direction: rtl;">
+        <img src="https://images.unsplash.com/photo-1558303585-73c8a9276d5f?w=600&q=80" alt="Almond Croissant" style="height: 300px; width: 100%; object-fit: cover; direction: ltr;">
+        <div style="direction: ltr;">
+          <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">Almond Croissant</h3>
+          <p class="price" style="font-size: 1.5rem; margin-bottom: 1rem;">\$5</p>
+          <p style="opacity: 0.8;">Day-old croissants soaked in syrup, filled with house-made frangipane. Better than the original.</p>
         </div>
-        <div class="bread-card">
-          <div class="bread-card-header">
-            <h3 class="bread-card-title">Okanagan Harvest</h3>
-            <span class="bread-card-price">\$11</span>
-          </div>
-          <p class="bread-card-desc">Seasonal blend of red fife and einkorn. Earthy, nutty, slightly sweet. Baked in limited quantities on Saturdays only.</p>
-          <p class="bread-card-meta">Saturdays only</p>
-        </div>
-        <div class="bread-card">
-          <div class="bread-card-header">
-            <h3 class="bread-card-title">Seeded Rye</h3>
-            <span class="bread-card-price">\$10</span>
-          </div>
-          <p class="bread-card-desc">40% dark rye, 60% heritage wheat. Caraway, sunflower, flax. Dense, satisfying, made for cheese and cold butter.</p>
-        </div>
-        <div class="bread-card">
-          <div class="bread-card-header">
-            <h3 class="bread-card-title">Whole Wheat Miche</h3>
-            <span class="bread-card-price">\$10</span>
-          </div>
-          <p class="bread-card-desc">An old-style country loaf. 80% whole wheat, 20% white. Mild tang, soft crumb, beautiful ear. The bread your grandparents would recognise.</p>
+      </div>
+      
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+        <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=600&q=80" alt="Morning Bun" style="height: 300px; width: 100%; object-fit: cover;">
+        <div>
+          <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">Morning Bun</h3>
+          <p class="price" style="font-size: 1.5rem; margin-bottom: 1rem;">\$4</p>
+          <p style="opacity: 0.8;">Laminated dough, rolled in cinnamon sugar and orange zest. Sticky, flaky, impossible to eat gracefully.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Pastries Section -->
-  <section class="section grain-bg">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Pastries</h2>
-      </div>
-      <div class="bread-grid">
-        <div class="bread-card">
-          <div class="bread-card-header">
-            <h3 class="bread-card-title">Laminated Butter Croissant</h3>
-            <span class="bread-card-price">\$4.50</span>
-          </div>
-          <p class="bread-card-desc">72 hours of lamination. Cultured BC butter. Honeycombed interior. The real thing.</p>
-        </div>
-        <div class="bread-card">
-          <div class="bread-card-header">
-            <h3 class="bread-card-title">Almond Croissant</h3>
-            <span class="bread-card-price">\$5</span>
-          </div>
-          <p class="bread-card-desc">Day-old croissants soaked in syrup, filled and topped with house-made frangipane. Better than the original. We mean that.</p>
-        </div>
-        <div class="bread-card">
-          <div class="bread-card-header">
-            <h3 class="bread-card-title">Morning Bun</h3>
-            <span class="bread-card-price">\$4</span>
-          </div>
-          <p class="bread-card-desc">Laminated dough, rolled in cinnamon sugar and orange zest. Sticky, flaky, impossible to eat gracefully.</p>
-        </div>
-        <div class="bread-card">
-          <div class="bread-card-header">
-            <h3 class="bread-card-title">Kouign-Amann</h3>
-            <span class="bread-card-price">\$5.50</span>
-          </div>
-          <p class="bread-card-desc">Breton butter cake. Caramelised, salty, layered. Made Fridays only. Sells out by 8:30am.</p>
-          <p class="bread-card-meta">Fridays only</p>
-        </div>
-      </div>
+  <!-- Seasonal -->
+  <section class="section section-dark">
+    <div class="reveal" style="max-width: 700px;">
+      <p class="label" style="margin-bottom: 1rem; color: var(--wheat);">Seasonal</p>
+      <h2 class="display-md" style="margin-bottom: 2rem;">Limited Batches</h2>
+      <p style="opacity: 0.8; font-size: 1.1rem; line-height: 1.8;">Every season we develop two or three specials using whatever grain, fruit, or inspiration is around. Right now: fig and fennel focaccia, pear and cardamom galette.</p>
+      <p style="margin-top: 2rem;"><a href="https://instagram.com/kettleandgrain" target="_blank" style="color: var(--wheat);">Follow @kettleandgrain for updates →</a></p>
     </div>
   </section>
 
-  <!-- Seasonal Specials -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Seasonal Specials</h2>
-      </div>
-      <div class="teaser-block">
-        <p>Every season we develop two or three specials using whatever grain, fruit, or inspiration is around. Right now: fig and fennel focaccia, pear and cardamom galette. Ask at the counter or follow us on Instagram for weekly updates.</p>
-        <a href="https://instagram.com/kettleandgrain" target="_blank" class="link-arrow">Follow us @kettleandgrain</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="info-strip">
-    <div class="container text-center">
-      <h2 style="margin-bottom: 1rem;">Want to guarantee your loaves?</h2>
-      <p style="margin-bottom: 1.5rem; opacity: 0.9;">Pre-order for Saturday pickup and skip the line.</p>
-      <a href="order-visit.html" class="btn btn-secondary">Pre-order now</a>
+  <!-- CTA -->
+  <section class="section" style="text-align: center;">
+    <div class="reveal">
+      <h2 class="display-md" style="margin-bottom: 1.5rem;">Guarantee your loaves</h2>
+      <p style="opacity: 0.8; margin-bottom: 2rem;">Pre-order for Saturday pickup and skip the line.</p>
+      <a href="order-visit.html" class="hero-cta" style="margin: 0 auto;">Pre-order Now →</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-brand">Kettle & Grain Bakery</div>
-          <p class="footer-address">1142 Ellis Street, Kelowna BC V1Y 1Z4</p>
-        </div>
-        <div class="footer-hours">
-          <h4>Hours</h4>
-          <p>Tuesday – Friday: 7am – 2pm or sellout</p>
-          <p>Saturday: 7am – 1pm</p>
-          <p>Sunday – Monday: Closed</p>
-        </div>
-        <div class="footer-contact">
-          <h4>Contact</h4>
-          <p><a href="https://instagram.com/kettleandgrain" target="_blank">Instagram: @kettleandgrain</a></p>
-          <p><a href="mailto:hello@kettleandgrain.ca">hello@kettleandgrain.ca</a></p>
-        </div>
+    <div class="footer-logo">Kettle <span>&</span> Grain</div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Tuesday – Friday: 7am – 2pm<br>or sellout</p>
+        <p>Saturday: 7am – 1pm</p>
+        <p>Sunday – Monday: Closed</p>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Kettle & Grain Bakery. All rights reserved.</p>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>1142 Ellis Street<br>Kelowna BC V1Y 1Z4</p>
+        <p><a href="mailto:hello@kettleandgrain.ca">hello@kettleandgrain.ca</a></p>
+        <p><a href="https://instagram.com/kettleandgrain" target="_blank">@kettleandgrain</a></p>
       </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Kettle & Grain Bakery. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      mobileNav.classList.toggle('active');
+    });
+    
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 100);
+    });
+    
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => entry.isIntersecting && entry.target.classList.add('active'));
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
